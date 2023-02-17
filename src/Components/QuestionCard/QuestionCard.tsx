@@ -6,7 +6,7 @@ export const QuestionCard = () => {
     // ternary for the button 
     // clicked ? question.answer : 'Click Me For The Answer'
 
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState<boolean>(false)
 
     return (
         <article>

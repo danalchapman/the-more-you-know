@@ -1,4 +1,4 @@
-export const cData = [
+export const tData = [
     {
         id: 'a1',
         question: 'In as much detail as possible, explain how you would localize an application.',

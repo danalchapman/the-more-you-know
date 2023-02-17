@@ -1,4 +1,4 @@
-import { QuestionCard } from '../QuestionCard/QuestionCard'
+// import { QuestionCard } from '../QuestionCard/QuestionCard'
 import './QuestionsBox.css'
 
 export const QuestionsBox = () => {
