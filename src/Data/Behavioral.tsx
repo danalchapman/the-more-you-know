@@ -161,7 +161,7 @@ export const bData = [
     },
     {
         id: 'b33',
-        question: 'Tell me about a time you needed to get information from someone who wasn’t very responsive. What did you do?',
+        question: 'Tell me about a time you needed to get information from someone who wasn\'t very responsive. What did you do?',
         answer: ''
     },
 ]
