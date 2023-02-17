@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { QuestionsBox } from '../QuestionsBox/QuestionsBox'
 import './App.css';
 
 export const App = () => {
-
-  const [questions, setQuestions] = useState([])
 
   return (
     <main className="App">
