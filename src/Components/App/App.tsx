@@ -1,12 +1,15 @@
-import React from 'react';
+import { useState } from 'react';
+import { QuestionsBox } from '../QuestionsBox/QuestionsBox'
 import './App.css';
 
-function App() {
+export const App = () => {
+
+  const [questions, setQuestions] = useState([])
+
   return (
-    <div className="App">
+    <main className="App">
       <h1>The More You Know</h1>
-    </div>
+      <QuestionsBox />
+    </main>
   );
 }
-
-export default App;
