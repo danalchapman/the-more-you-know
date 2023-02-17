@@ -10,27 +10,23 @@ export const QuestionsBox = () => {
     // write functions for onClick for each button
 
     // const [question, setQuestion] = useState<Question>({ id: '', question: '', answer: ''})
-    const [bQuestions, setBQuestions] = useState<Question[]>([])
-    const [tQuestions, setTQuestions] = useState<Question[]>([])
+    const [questions, setQuestions] = useState<Question[]>([])
 
     const chooseBehavioral = () => {
-        setBQuestions(bData)
+        setQuestions(bData)
     }
 
     const chooseTechnical = () => {
-        setTQuestions(tData)
+        setQuestions(tData)
+    }
+
+    const clearQuestions = () => {
+        setQuestions([])
     }
 
     const displayQuestions = () => {
-        let displayedQuestions;
 
-        if (bQuestions) {
-            displayedQuestions = bQuestions
-        } else if (tQuestions) {
-            displayedQuestions = tQuestions
-        }
-
-        return displayedQuestions?.map(question => {
+        return questions?.map(question => {
             return (
                 <QuestionCard 
                     key={ question.id }
@@ -53,7 +49,14 @@ export const QuestionsBox = () => {
                     onClick={() => chooseTechnical()}
                 >Technical Questions</button>
             </div>
-            { displayQuestions() }
+            <div>
+                <button
+                    onClick={() => clearQuestions()}
+                >Clear Questions</button>
+            </div>
+            <article className='question-box'>
+                { questions.length ? displayQuestions() : <h4>Awaiting Choice...</h4>}
+            </article>
         </section>
     )
 }

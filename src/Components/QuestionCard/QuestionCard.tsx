@@ -10,10 +10,10 @@ export const QuestionCard = ({ id, question, answer }: Question) => {
     // const [clicked, setClicked] = useState<boolean>(false)
 
     return (
-        <article>
+        <div className='question-card'>
             <h3>Question {id}</h3>
             <p>{question}</p>
             <button>Click Me For the Answer</button>
-        </article>
+        </div>
     )
 }
