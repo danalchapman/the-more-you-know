@@ -54,9 +54,12 @@ export const QuestionsBox = () => {
                     onClick={() => clearQuestions()}
                 >Clear Questions</button>
             </div>
+            { questions.length ?
             <article className='question-box'>
-                { questions.length ? displayQuestions() : <h4>Awaiting Choice...</h4>}
-            </article>
+                { displayQuestions() }
+            </article>  :
+            <h4>Awaiting Choice...</h4>} 
+            
         </section>
     )
 }
