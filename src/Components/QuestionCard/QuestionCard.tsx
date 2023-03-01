@@ -18,7 +18,6 @@ export const QuestionCard = ({ id, question, answer }: Question) => {
 
     return (
         <div className='question-card'>
-            <h3>Question {id}</h3>
             <p>{question}</p>
             <button
                 className='answer-btn'
