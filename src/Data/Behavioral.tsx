@@ -2,11 +2,11 @@ export const bData = [
     {
         id: 'b1',
         question: 'What made you switch from your prior career into programming?',
-        answer: ''
+        answer: 'A desire to be continuously challenged and to be afforded the opportunity to always be learning, not just for the job but for my own  edification and understanding.'
     },
     {
         id: 'b2',
-        question: 'How do you familiarize yourself with a codebase you haven’t worked in before?',
+        question: 'How do you familiarize yourself with a codebase you haven\'t worked in before?',
         answer: ''
     },
     {
