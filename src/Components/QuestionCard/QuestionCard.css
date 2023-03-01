@@ -1,5 +1,7 @@
 .question-card {
-    border: 2px solid green;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: .5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
