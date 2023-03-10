@@ -39,26 +39,33 @@ export const QuestionsBox = () => {
     }
 
     return (
-        <section>
-            <h2>Choose Your Topic</h2>
-            <div>
-                <button
-                    onClick={() => chooseBehavioral()}
-                >Behavioral Questions</button>
-                <button
-                    onClick={() => chooseTechnical()}
-                >Technical Questions</button>
-            </div>
-            <div>
-                <button
-                    onClick={() => clearQuestions()}
-                >Clear Questions</button>
+        <section className='questions-display'>
+            <div className='nav-btns-box'>
+                <div>
+                    <button
+                        className='nav-btns'
+                        onClick={() => chooseBehavioral()}
+                    >Behavioral Questions</button>
+                    <button
+                        className='nav-btns'
+                        onClick={() => chooseTechnical()}
+                    >Technical Questions</button>
+                </div>
+                <div>
+                    <button
+                        className='nav-btns'
+                        onClick={() => clearQuestions()}
+                    >Clear Questions</button>
+                </div>
             </div>
             { questions.length ?
             <article className='question-box'>
                 { displayQuestions() }
             </article>  :
-            <h4>Awaiting Choice...</h4>} 
+            <article className='loading-box'>
+                <p>Here you can review common behavioral and (front-end) techincal questions.</p>
+                <p>Choose from the options above to start your review.</p>    
+            </article>} 
             
         </section>
     )
