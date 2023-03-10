@@ -4,4 +4,8 @@
     grid-template-rows: auto auto auto;
 }
 
+.loading-box {
+    height: 100vh;
+}
+
 /* Want to apply horizontal scroll animation */

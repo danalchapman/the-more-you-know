@@ -58,7 +58,9 @@ export const QuestionsBox = () => {
             <article className='question-box'>
                 { displayQuestions() }
             </article>  :
-            <h4>Awaiting Choice...</h4>} 
+            <article className='loading-box'>
+                <h4>Awaiting Choice...</h4>    
+            </article>} 
             
         </section>
     )
