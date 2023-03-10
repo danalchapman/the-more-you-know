@@ -1,16 +1,11 @@
 .main-app {
-  background-attachment: fixed;
-  background-image: url('../../Assets/lights.avif');
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
   text-align: center;
 }
 
-
-
-.app-title {
-  padding: 1rem;
-  margin-top: 0;
-  text-decoration: underline;
+.logo-box {
+  background-color: #89869B;
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
 }

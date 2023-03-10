@@ -39,7 +39,7 @@ export const QuestionsBox = () => {
     }
 
     return (
-        <section>
+        <section className='questions-display'>
             <div className='nav-btns-box'>
                 <div>
                     <button
