@@ -43,14 +43,17 @@ export const QuestionsBox = () => {
             <div className='nav-btns-box'>
                 <div>
                     <button
+                        className='nav-btns'
                         onClick={() => chooseBehavioral()}
                     >Behavioral Questions</button>
                     <button
+                        className='nav-btns'
                         onClick={() => chooseTechnical()}
                     >Technical Questions</button>
                 </div>
                 <div>
                     <button
+                        className='nav-btns'
                         onClick={() => clearQuestions()}
                     >Clear Questions</button>
                 </div>
@@ -60,7 +63,8 @@ export const QuestionsBox = () => {
                 { displayQuestions() }
             </article>  :
             <article className='loading-box'>
-                <h4>Awaiting Choice...</h4>    
+                <p>Here you can review common behavioral and (front-end) techincal questions.</p>
+                <p>Choose from the options above to start your review.</p>    
             </article>} 
             
         </section>

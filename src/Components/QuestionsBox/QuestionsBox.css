@@ -4,6 +4,16 @@
     justify-content: space-evenly;
 }
 
+.nav-btns {
+    background-color: #f9b4ab;
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    font-weight: bold;
+    margin: .25rem;
+    padding: .45rem;
+}
+
 .question-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
