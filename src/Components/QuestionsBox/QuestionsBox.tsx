@@ -40,19 +40,20 @@ export const QuestionsBox = () => {
 
     return (
         <section>
-            <h2>Choose Your Topic</h2>
-            <div>
-                <button
-                    onClick={() => chooseBehavioral()}
-                >Behavioral Questions</button>
-                <button
-                    onClick={() => chooseTechnical()}
-                >Technical Questions</button>
-            </div>
-            <div>
-                <button
-                    onClick={() => clearQuestions()}
-                >Clear Questions</button>
+            <div className='nav-btns-box'>
+                <div>
+                    <button
+                        onClick={() => chooseBehavioral()}
+                    >Behavioral Questions</button>
+                    <button
+                        onClick={() => chooseTechnical()}
+                    >Technical Questions</button>
+                </div>
+                <div>
+                    <button
+                        onClick={() => clearQuestions()}
+                    >Clear Questions</button>
+                </div>
             </div>
             { questions.length ?
             <article className='question-box'>

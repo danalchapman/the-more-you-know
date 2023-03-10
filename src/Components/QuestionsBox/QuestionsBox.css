@@ -1,3 +1,9 @@
+.nav-btns-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .question-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -6,6 +12,7 @@
 
 .loading-box {
     height: 100vh;
+    font-style: italic;
 }
 
 /* Want to apply horizontal scroll animation */

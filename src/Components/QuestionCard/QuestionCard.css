@@ -7,6 +7,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-weight: bold;
     justify-content: space-between;
     margin: .5rem;
+}
+
+.answer-btn {
+    background-color: #bbd4ce;
+    border: none;
+    color: black;
+    font-weight: bold;
+    width: 100%;
 }

@@ -3,12 +3,14 @@
   background-image: url('../../Assets/lights.avif');
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fdebd3;
+  color: white;
   text-align: center;
 }
 
 
 
 .app-title {
+  padding: 1rem;
   margin-top: 0;
+  text-decoration: underline;
 }
